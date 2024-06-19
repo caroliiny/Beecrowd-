@@ -1,0 +1,33 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int val, vetor[10];
+
+    scanf("%d", &val); 
+
+    for(int i=0; i<10; i++){
+
+        if(i==0){
+
+            vetor[i]=val;
+            printf("N[%d] = %d\n", i, vetor[i]);
+        }
+
+        else if(i==1){
+
+            vetor[i]=val*2;
+            printf("N[%d] = %d\n", i, vetor[i]);
+        }
+
+        else{
+
+            vetor[i]=vetor[i-1]*2;
+            printf("N[%d] = %d\n", i, vetor[i]);
+        }
+        
+        
+    }
+ 
+    return 0;
+}
